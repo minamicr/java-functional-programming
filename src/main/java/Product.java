@@ -1,6 +1,11 @@
 public class Product {
 
   String name;
+
+  public Double getPrice() {
+    return price;
+  }
+
   Double price;
   Double discount; // > 30% super promocao
   Double frete;

@@ -24,6 +24,8 @@ public class DesafioMap {
         .map(num -> reverse.apply(num))
         .map(num -> binaryToInteger.apply(num))
         .forEach(System.out::println);
+
+
   }
 
 }

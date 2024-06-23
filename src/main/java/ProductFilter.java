@@ -20,6 +20,8 @@ public class ProductFilter {
     Function<Product, String> format = product -> product.name +  " "
         + (product.price * (1 - product.discount))
         + " delivery " + product.frete;
+    //ToDoubleFunction<Product> comp = product -> product.getPrice();
+    //BinaryOperator<Product> min = product -> Comparator.comparingDouble(comp);
 
     products.stream()
         .filter(sale)
